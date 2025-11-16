@@ -6,8 +6,8 @@ torchrun --nnodes=1 --nproc_per_node=4 \
     --stat-path /path/stats/cifar10/cifar10.train.npz \
 	--model DiT-N/2 \
 	--epochs 100 \
-	--loss multione \
-	--trainsetup MultiOne \
+	--loss lpips \
+	--trainsetup GET \
 	--sigmatime \
 	--depth 6 \
 	--hidden-size 128 \
